@@ -2,23 +2,31 @@
 <html>
 <head>
 	<title>Embroidery for Existentialists</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
 	<header>
-		<img style="width: 954px; height: 187px" src="images/fake-logo.jpg">
-	</header>
+		<h1>Embroidery for Existentialists</h1>
+		<h2>(at least your needle has a point.)</h2>
+		<nav>
+			<ul class="nav-link">
+				<a href="how-to.html"><li>Back-Stitch</li></a>
+				<a href=""><li>Split Stitch</li></a>
+				<a href=""><li>Satin Stitch</li></a>
+				<a href=""><li>Supplies</li></a>
+			</ul>
+		</nav>
+	</header>	
 	<section>
-		<h2><em>At least your needle has a point.</em></h2>
-	</section>	
-	<section>
-		<h1>Why?</h1>
+		<h3>Why?</h3>
 		<p><em>Who knows and who cares?</em></p>
 		<p>Apparently, sitting still isn't a hobby, but embroidery is as close as you can get to simultaneously doing something and nothing, so here it is. This site will show you some basic embroidery techniques and a few examples that would make Sartre... probably not care all that much.</p>
-		<img style="width: 400px; height: 400px" src="images/IMG_7264.JPG">
+		<img id="dont-try" style="width: 400px; height: 400px" src="images/IMG_7264.JPG">
 	</section>
 	<section>
-		<h1>Here's what you will need:</h1>
-			<ul>
+		<h3>Here's what you will need:</h3>
+			<ul id="supplies">
 				<li>Embroidery floss</li>	
 				<li>Embroidery needles</li>	
 				<li>Embroidery transfers (or a pencil to draw by hand)</li>
@@ -30,8 +38,29 @@
 	<div>
 		<a href="how-to.html">Click here to learn some basic stitches.</a>
 	</div>
-	<br>
-	<div id="Inspiration">
+	<div id="contact">
+			<form action="thanku.html" method="post">
+				<br>
+				<label>Contact us:</label>
+				<br>
+				<div>
+					<label>Full Name:</label>
+					<input type="text" name="fullname">
+				</div>
+				<div>
+					<label>Email:</label>
+					<input type="email" name="email">
+				</div>
+				<textarea name="textarea" rows="20" cols="40">"Nothingness lies coiled at the heart of being like a worm."" - Sartre</textarea>
+				<br><button name="button">Submit</button>
+			</form>
+			<a href="thanku.html">Click here for simulated "Submit"</a>
+	</div>
+	<footer>Designed by Melanie Gershman, 2016</footer>
+</body>
+</html>
+
+<!-- <div id="Inspiration">
 		<table border=1>
 			<tr>
 				<th colspan=3>Inspiration</th>
@@ -49,27 +78,4 @@
 				<td>I think it's interesting that the description portion in the beginning uses a table for the text/image. I tried it too! But I wonder if it wouldn't be the same if I were to use stylized divs to achieve the same effect?</td>
 			</tr>
 		</table>
-	</div>
-	<br>
-	<div id="Contact">
-		<fieldset>
-			<form action="thanku.html" method="post">
-				<br>
-				<label>Contact us:</label>
-				<br>
-				<div>
-					<label>Full Name:</label>
-					<input type="text" name="fullname">
-				</div>
-				<div>
-					<label>Email:</label>
-					<input type="email" name="email">
-				</div>
-				<textarea name="textarea" rows="20" cols="40">"Nothingness lies coiled at the heart of being like a worm."" - Sartre</textarea>
-				<br><button name="button">Submit</button>
-			</form>
-			<a href="thanku.html">Click here for simulated "Submit"</a>
-		</fieldset>	
-	</div>
-</body>
-</html>
+	</div> -->
