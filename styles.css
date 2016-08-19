@@ -1,5 +1,10 @@
-h1, h2, h3, h4, h5, h6 {
+body {
+	max-width: 50%;
+	margin: 0 auto;
 	font-family: Roboto, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
 }
 
 ul, ol {
@@ -7,7 +12,6 @@ ul, ol {
 }
 
 a {
-	font-family: Roboto, sans-serif;
 	text-decoration: none;
 }
 
@@ -16,53 +20,40 @@ header {
 	text-align: center;
 	display: block;
 	position: relative;
-	border: #bebebe dashed 2px;
+	border: #bebebe dashed 1px;
 	margin-top: 27px;
-/*	padding-left: 15px;*/
-/*	margin-left: 350px;*/
-	margin: auto;
-	width: 50%;
+	border-bottom: #bebebe solid 30px;
+	/*box-shadow: 0px 5px 10px #888888;*/
 }
 
 p {
-	font-family: Roboto, sans-serif;
 	font-size: 12px;
+	text-align: center;
 }
+
 
 footer {
 	text-align: center;
-	font-family: Roboto, sans-serif;
 	font-size: 8px;
 	font-weight: bold;
 	color: darkgrey;
 }
 
-#contact {
-	border-radius: red dashed 3px;
+section {
+	margin: auto;
+	text-align: center;
+	width: 475px;
 }
 
 #dont-try {
 	transform: rotate(90deg);
 	border-radius: 25px;
-	text-align: center;
-}
-
-section {
-	text-align: center;
+/*	text-align: center;*/
 }
 
 #home-link {
 	text-decoration: none;
-}
-
-
-.directions {
-	font-family: Roboto, sans-serif;
-	font-size: 12px;
-}
-
-.directions li::before{
-	content: "-- ";
+	color: black;
 }
 
 #home-link a:visited {
@@ -71,43 +62,90 @@ section {
 
 #home-link a:hover{
 	text-decoration: none;
+	box-shadow: 2px 2px 15px #888888;
+}
+
+#home-link a:active{
+	text-decoration: none;
+	box-shadow: 2px 2px 15px #888888;
+}
+
+#supplies {
+	font-size: 12px;
+}
+
+/*NEEDS ADJUSTMENT, BUTTON WONT FILL*/
+
+#clickme {
+	border: pink solid 2px;
+	border-radius: 4px;
+	margin: 0 auto;
+	width: 150px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+/*#clickme a {
+	background-color: pink;
+*/}
+
+#clickme a:visited {
+	color: grey;
+	/*text-decoration: none;*/
+}
+
+#clickme a:hover {
+	background-color: pink;
+	color: white;
+}
+
+/* NEEDS CENTERING*/
+.instructions {
+	position: relative;
+	text-align: center;
+	border-radius: 20px;
+}
+
+.directions {
+	font-size: 12px;
+}
+
+.directions li::before{
+	content: "-- ";
 }
 
 .nav-link {
 	padding: 0px;
-	text-decoration: none;
+	border: pink;
+	border-radius: 2px;	
 }
 
 .nav-link li {
-	font-family: Roboto, sans-serif;
 	font-size: 12px;
 	text-align: center;
 	display: inline;
-/*	padding-right: 7px;
-	padding-left: 9px;*/
+	padding: 3px 6px 3px 6px;
 	list-style-type: none;
+	text-decoration: none;
+	border: pink solid 2px;
+	border-radius: 4px;
 }
 
 .nav-link a {
 	text-decoration: none;
+	color: black;
 }
 
 .nav-link a:active {
-	box-shadow: 2px 2px 15px #888888;
+	box-shadow: 2px 2px 5px #bebebe;
 }
 
 .nav-link a:visited {
 	color: grey;
 }
 
-#supplies {
-	font-family: Roboto, sans-serif;
-	font-size: 12px;
-}
-
-
 .nav-link a:hover {
 	color: white;
 	background-color: pink;
-	border-radius: 2px;
+	border-radius: 4px;
 }
