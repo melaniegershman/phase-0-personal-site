@@ -75,6 +75,7 @@ section {
 
 .nav-link {
 	padding: 0px;
+	text-decoration: none;
 }
 
 .nav-link li {
