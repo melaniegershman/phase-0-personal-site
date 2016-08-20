@@ -175,6 +175,12 @@ section {
 	
 }
 
+#thankyou img {
+	margin-top: 30px;
+	border-radius: 25px;
+	width: 25%;
+}
+
 .instructions {
 	position: relative;
 	border-radius: 20px;
