@@ -1,6 +1,7 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
+   CSS RESET
 */
 
 html, body, div, span, applet, object, iframe,
@@ -48,15 +49,17 @@ table {
 }
 
 
-/* begin css */
+/* CSS BELOW */
 
 body {
-	max-width: 50%;
-	margin: 0 auto;
+/*	width: 80%;
+	max-width: 960px;
+	margin: 0 auto;*/
 	font-family: Roboto, sans-serif;
 	font-size: 16px;
 	line-height: 22px;
 	text-align: center;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -85,10 +88,19 @@ a {
 
 header {
 	display: block;
-	margin-top: 27px;
+	/*margin-top: 27px;*/
 	border-bottom: #bebebe solid 30px;
 	padding: 30px 15px;
 	margin-bottom: 25px;
+	background: url("https://images.unsplash.com/photo-1463778996521-da8b6f00dacf?dpr=2&auto=format&crop=entropy&fit=crop&w=1500&h=1174&q=80&cs=tinysrgb");
+	background-size: cover;
+    padding: 50px 25px;
+    color: #fff;
+
+}
+
+header h1, header h2 {
+	text-shadow: 0 2px 7px rgba(0,0,0,0.7);
 }
 
 p {
@@ -108,9 +120,12 @@ footer {
 }
 
 section {
-	margin: auto;
+	/*margin: auto;*/
 	text-align: center;
-	width: 475px;
+	width: 80%;
+	max-width: 960px;
+	margin: 0 auto;
+	/*width: 475px;*/
 }
 
 #dont-try {
@@ -121,7 +136,7 @@ section {
 
 #home-link {
 	text-decoration: none;
-	color: black;
+	color: white;
 }
 
 #home-link a:visited {
@@ -160,20 +175,6 @@ section {
 	
 }
 
-/*#clickme a {
-	background-color: pink;
-}
-
-a#clickme :visited {
-	color: grey;
-	text-decoration: none;
-}
-
-a#clickme :hover {
-	background-color: pink;
-	color: white;
-}
-*/
 .instructions {
 	position: relative;
 	border-radius: 20px;
@@ -194,11 +195,11 @@ a#clickme :hover {
 
 .instructions img:first-of-type {
 	border-radius: 25px;
-	width: 80%;
+	width: 60%;
 }
 
 .instructions img {
-	width: 80%;
+	width: 60%;
 }
 
 .directions {
@@ -212,7 +213,7 @@ a#clickme :hover {
 .nav-link {
 	padding: 0px;
 	border: pink;
-	border-radius: 2px;	
+	border-radius: 2px;
 }
 
 .nav-link li {
@@ -221,27 +222,44 @@ a#clickme :hover {
 	display: inline-block;
 	list-style-type: none;
 	text-decoration: none;
-	border: pink solid 2px;
+	border: white solid 2px;
 	border-radius: 4px;
+	margin: 5px 5px 0 -4px;
+}
+
+.nav-link li:first-child {
+	margin-left: 0;
+}
+
+.nav-link li:last-child {
+	margin-right: 0;
 }
 
 .nav-link a, #clickme {
 	text-decoration: none;
 	color: black;
-	padding: 3px 6px 3px 6px;
+	padding: 5px 9px;
 	display: block;
+}
+
+.nav-link a {
+	color: #FFF;
 }
 
 .nav-link a:active {
 	box-shadow: 2px 2px 5px #bebebe;
 }
 
-.nav-link a:visited {
-	color: grey;
-}
 
 .nav-link a:hover {
-	color: white;
-	background-color: pink;
+	color: black;
+	background-color: white;
 	
+}
+
+@media screen and (max-width: 768px) {
+	header {
+		background-image: none;
+		background-color: black;
+	}
 }
