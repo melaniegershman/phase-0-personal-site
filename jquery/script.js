@@ -2,7 +2,7 @@ $(function(){
     $("#poem").hover(function(){
         $("#beard").animate({
             left: '700px'
-        });
+        }, 600);
     });
 });
 
@@ -13,7 +13,14 @@ $(function(){
 });
 
 $(function(){
-    $("#hint").mouseenter(function(){
+    $("span").click(function(){
         $("#poem").fadeIn("7000");
+         $("#beard").animate({right: '700px'}, "slow");
     });
 });
+
+// $(function()) {
+//     $("#beard").click(function(){
+//         $("#beard").removeAttr("animate");
+//     });
+// }
