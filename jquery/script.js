@@ -1,12 +1,14 @@
 $(function(){
     $("#poem").mouseout(function(){
-        $("#poem").fadeOut("9000");
+        $("#poem").animate({
+            opacity: 0.0
+        });
     });
 });
 
 $(function(){
     $("span").click(function(){
-        $("#poem").fadeIn("7000");
+        $("#poem").animate({opacity: 1});
          $("#beard").animate({ left: "-=475" }, 500);
     });
 });
@@ -18,8 +20,3 @@ $(function(){
         }, "slow");
     });
 });
-// $(function()) {
-//     $("#beard").click(function(){
-//         $("#beard").removeAttr("animate");
-//     });
-// }
